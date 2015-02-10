@@ -1,0 +1,123 @@
+\section{Numbers}
+\subsection{The Integers}
+\definition{Positive Integers $\mathbb{Z}^+$:  $1, 2, 3, 4, \dots$}
+\definition{Origin: 0}
+\definition{Natural Numbers $\mathbb{N}^+$: $0, 1, 2, 3, \dots$}
+\definition{Negative Integers $\mathbb{Z}^-$: $-1, -2, -3, \dots$}
+\theorem{$0 + a = a + 0 = a$}
+\theorem{$a + (-a) = -a + a = 0$}
+\definition{Additive Inverse of $a$: $-a$}
+\theoremstyle{Plain}
+\newtheorem{addition}{Addition}[section]
+\begin{addition}
+Commutativity:
+\[
+\forall a, b \in \mathbb{Z}, a + b = b + a
+\]
+\end{addition}
+\begin{addition}
+Associativity:
+\[
+\forall a, b, c \in \mathbb{Z}, (a + b) + c = a + (b + c)
+\]
+\end{addition}
+\theorem{$\forall a, b \in \mathbb{Z}, a + b = 0 \implies (b = -a) \land (a = -b)$}
+\theorem{$\forall a \in \mathbb{Z}, a = -(-a)$}
+\theorem{$\forall a, b \in \mathbb{Z}, -(a + b) = -a - b$}
+\addition{$\forall a, b \in \mathbb{Z}^+ \implies a + b \in \mathbb{Z}^+$}
+\addition{$\forall a, b \in \mathbb{Z}^- \implies a + b \in \mathbb{Z}^-$}
+\subsection{Rules for Multiplication}
+\newtheorem{multiplication}{Multiplication}[section]
+\begin{multiplication}
+Commutativity:
+\[
+\forall a, b \in \mathbb{Z}, ab = ba
+\]
+\end{multiplication}
+\begin{multiplication}
+Associativity:
+\[
+\forall a, b, c \in \mathbb{Z}, (ab)c = a(bc)
+\]
+\end{multiplication}
+\theorem{$\forall a \in \mathbb{Z}, 1a = a$ and $\forall a \in \mathbb{Z}, 0a = 0$}
+\begin{multiplication}
+Distributivity
+\[
+\forall a, b, c \in \mathbb{Z}, a(b + c) = ab + ac
+\]
+and
+\[
+\forall a, b, c \in \mathbb{Z}, (b + c)a = ba + bc
+\]
+\end{multiplication}
+\theorem{$\forall a \in \mathbb{Z}, (-1)a = -a$}
+\theorem{$\forall a, b \in \mathbb{Z}, -(ab) = (-a) b$}
+\theorem{$\forall a, b \in \mathbb{Z}, -(ab) = a(-b)$}
+\theorem{$\forall a, b \in \mathbb{Z}, (-a)(-b) = ab$}
+\definition{$n$-th power of $a$ is $a^n = aaa...a$ ($n$ times)}
+\theorem{$\forall m, n \in \mathbb{Z}^+, a^{m + n} = a^ma^n$}
+\theorem{$\forall m, n \in \mathbb{Z}^+, (a^m)^n = a^{mn}$}
+\begin{example}
+\begin{align*}
+(ab)^n &= a^nb^n \\
+(ab)^n &= abab...ab \\
+ &= aa...abb...b \\
+ &=a^nb^n
+\end{align*}
+\end{example}
+\begin{multiplication}
+\[
+(a + b)^2 = a^2 + 2ab + b^2
+\]
+\[
+(a - b)^2 = a^2 - 2ab + b^2
+\]
+\[
+(a + b)(a - b) = a^2 - b^2
+\]
+\end{multiplication}
+\subsection{Even and Odd Integers; Divisibility}
+\definition{$\forall n \in \mathbb{Z}^+, \exists m \in \mathbb{Z}^+, n = 2m \implies n$ is even}
+\definition{$\forall n \in \mathbb{Z}, \exists m \in \mathbb{N}^+ \text{ (including 0)}, n = 2m + 1 \implies n$ is odd}
+\begin{theorem}
+Let $E(x)$ be the predicate for $x$ is even and let $O(x)$ be the predicate for $x$ is odd.
+\[
+\forall a, b \in \mathbb{Z}^+, E(a) \land E(b) \implies E(a + b)
+\]
+\[
+\forall a, b \in \mathbb{Z}^+, E(a) \land O(b) \implies O(a + b)
+\]
+\[
+\forall a, b \in \mathbb{Z}^+, O(a) \land E(b) \implies O(a + b)
+\]
+\[
+\forall a, b \in \mathbb{Z}^+, O(a) \land O(b) \implies E(a + b)
+\]
+\end{theorem}
+\begin{theorem}
+\[
+\forall a \in \mathbb{Z}^+, E(a) \implies E(a^2)
+\]
+\[
+\forall a \in \mathbb{Z}^+, O(a) \implies O(a^2)
+\]
+\end{theorem}
+\begin{corollary}
+\[
+\forall a \in \mathbb{Z}^+, E(a^2) \implies E(a)
+\]
+\[
+\forall a \in \mathbb{Z}^+, O(a^2) \implies O(a)
+\]
+\end{corollary}
+\definition{$d$ divides $n$ or $n$ is divisible by $d$ if $n = dk$ for some integer $k$}
+\subsection{Rational Numbers}
+\definition{Rational Number $\mathbb{Q}$:  can be written in the form $\frac{m}{n}$, where $m, n \in \mathbb{Z}$ and $n \neq 0$}
+\newtheorem{rational}{Rational}[section]
+\begin{rational}
+Rule for cross-multiplying.
+\[
+\forall m, n, r, s \in \mathbb{Z} \land m, s \neq 0 \implies \cfrac{m}{n} = \cfrac{r}{s} \iff ms = rn
+\]
+\end{rational}
