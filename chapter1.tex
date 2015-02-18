@@ -118,13 +118,13 @@ Let $E(x)$ be the predicate for $x$ is even and let $O(x)$ be the predicate for 
 \begin{rational}
 Rule for cross-multiplying.
 \[
-\forall m, n, r, s \in \mathbb{Z}, n \neq 0, s \neq 0 \implies \cfrac{m}{n} = \cfrac{r}{s} \iff ms = rn
+\forall m, n, r, s \in \mathbb{Q}, n \neq 0, s \neq 0 \implies \cfrac{m}{n} = \cfrac{r}{s} \iff ms = rn
 \]
 \end{rational}
 \begin{rational}
 Cancellation rule for fractions
 \[
-\forall a, m, n \in \mathbb{Z}, a \neq 0, n \neq 0 \implies \cfrac{am}{an} = \cfrac{m}{n}
+\forall a, m, n \in \mathbb{Q}, a \neq 0, n \neq 0 \implies \cfrac{am}{an} = \cfrac{m}{n}
 \]
 \end{rational}
 \begin{theorem}
@@ -133,49 +133,49 @@ Any positive rational number has an expression as a fraction in lowest form
 \begin{rational}
 Addition rule for rational numbers
 \[
-\cfrac{a}{d} + \cfrac{b}{d} = \cfrac{a + b}{d}
+\forall a, b, d \in \mathbb{Q}, d \neq 0 \implies \cfrac{a}{d} + \cfrac{b}{d} = \cfrac{a + b}{d}
 \]
 \end{rational}
 \begin{rational}
 General case of addition rule for rational numbers
 \[
-\cfrac{m}{n} + \cfrac{r}{s} = \cfrac{ms + rn}{ns}
+\forall m, n, r, s \in \mathbb{Q}, n \neq 0, s \neq 0 \implies \cfrac{m}{n} + \cfrac{r}{s} = \cfrac{ms + rn}{ns}
 \]
 \end{rational}
 \corollary{The sum of positive rational numbers is also positive}
-\corollary{$\forall a \in \mathbb{R} \implies 0 + a = a + 0 = a$}
+\corollary{$\forall a \in \mathbb{Q} \implies 0 + a = a + 0 = a$}
 \corollary{Addition of rational numbers satisfies the properties of commutativity and associativity}
 \begin{rational}
 Multiplication of rational numbers
 \[
-\cfrac{m}{n}*\cfrac{r}{s} = \cfrac{mr}{ns}
+\forall m, n, r, s \in \mathbb{Q}, n \neq 0, s \neq 0 \implies \cfrac{m}{n}*\cfrac{r}{s} = \cfrac{mr}{ns}
 \]
 \end{rational}
-\corollary{$\forall k \in \mathbb{Z}^+, a^k = \left(\cfrac{m}{n}\right)^k = \cfrac{m^k}{n^k}$}
+\corollary{$\forall k \in \mathbb{Q}^+, n \neq 0 \implies a^k = \left(\cfrac{m}{n}\right)^k = \cfrac{m^k}{n^k}$}
 \theorem{There is no positive rational number whose square is 2}
 \definition{Irrational: a number which is not rational}
 \corollary{For any rational number $a$ we have $1a = a$ and $0a = 0$. Furthermore, multiplication is associative, commutative, and distributive with respect to addition.}
 \begin{rational}
 Rational numbers satisfy the property
 \[
-\forall a \in \mathbb{R}, a \neq 0 \implies \exists a^{-1}, a^{-1}a = aa^{-1} = 1
+\forall a \in \mathbb{Q}, a \neq 0 \implies \exists a^{-1}, a^{-1}a = aa^{-1} = 1
 \]
 \end{rational}
 \begin{rational}
 Cross-multiplication
 \[
-\forall a, b, c, d \in \mathbb{R}, b \neq 0, d \neq 0 \implies \cfrac{a}{b} = \cfrac{c}{d} \implies ad = bc, ad = bc \implies \cfrac{a}{b} = \cfrac{c}{d}
+\forall a, b, c, d \in \mathbb{Q}, b \neq 0, d \neq 0 \implies \cfrac{a}{b} = \cfrac{c}{d} \implies ad = bc, ad = bc \implies \cfrac{a}{b} = \cfrac{c}{d}
 \]
 \end{rational}
 \begin{rational}
 Cancellation law for multiplication
 \[
-\forall a, b, c \in \mathbb{R} a \neq 0, ab = ac \implies b = c
+\forall a, b, c \in \mathbb{Q} a \neq 0, ab = ac \implies b = c
 \]
 \end{rational}
 \begin{rational}
 Common denominator
 \[
-\cfrac{a}{b} + \cfrac{c}{d} = \cfrac{ad + bc}{bd}
+\forall a, b, c, d \in \mathbb{Q}, b \neq 0, d \neq 0 \implies \cfrac{a}{b} + \cfrac{c}{d} = \cfrac{ad + bc}{bd}
 \]
 \end{rational}
