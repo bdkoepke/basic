@@ -2,5 +2,59 @@
 \subsection{Addition and Multiplication}
 \begin{addition}
 Addition is commutative and associative, meaning that
-
+\[
+\forall a, b, c \in \mathbb{R}, a + b = b + a, a + (b + c) = (a + b) + c
+\]
+Furthermore
+\[
+0 + a = a
+\]
+To each real number $a$ there is an associated $a$ denoted by $-a$ such that
+\[
+a + (-a) = 0
+\]
 \end{addition}
+\begin{multiplication}
+Properties of multiplication, multiplication is commutative and associative, meaning that
+\[
+\forall a, b, c \in \mathbb{R}, ab = ba, a(bc) = (ab)c
+\]
+Furthermore
+\[
+1a = a, 0a = 0
+\]
+Multiplication is distributive with respect to addition meaning that
+\[
+a(b + c) = ab + ac, (b + c)a = ba + ca
+\]
+\end{multiplication}
+\begin{corollary}
+For real numbers
+\[
+(a + b)^2 = a^2 + 2ab + b^2
+\]
+\[
+(a - b)^2 = a^2 - 2ab + b^2
+\]
+\[
+(a + b)(a - b) = a^2 - b^2
+\]
+\end{corollary}
+\begin{corollary}
+There is also the existence of a multiplicative inverse
+\[
+\forall a \in \mathbb{R}, a \neq 0 \exists a^{-1} \mid a^{-1}a = aa^{-1} = 1
+\]
+\end{corollary}
+\subsection{Real Numbers: Positivity}
+\theoremstyle{plain}
+\newtheorem{positivity}{Positivity}[section]
+\positivity{If $a, b$ are positive then so are the product $ab$ and the sum $a + b$}
+\positivity{If $a \in \mathbb{R}$ then either $a$ is positive or $a = 0$ or $-a$ is positive, and these possibilities are mutually exclusive.}
+\positivity{If $a$ is positive and $b$ is negative, then $ab$ is negative}
+\positivity{If $a$ is negative and $b$ is negative, then $ab$ is positive}
+\positivity{If $a$ is positive, then $1/a$ is positive}
+\positivity{If $a$ is negative, then $1/a$ is negative}
+\corollary{$\forall a \in \mathbb{R}, a > 0 \implies \exists b \in \mathbb{R} \mid b^2 = a$}
+\corollary{$\forall x, y \in \mathbb{R}, x^2 = y^2 \implies x = y $ or $x -y$}
+\definition{Absolute value of $x$ is $|x| = \sqrt{x^2}$}
