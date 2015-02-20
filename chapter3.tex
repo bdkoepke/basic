@@ -66,3 +66,27 @@ There is also the existence of a multiplicative inverse
 \corollary{$\forall a \in \mathbb{R}^+, n \in \mathbb{Z}^+ \exists r \in \mathbb{R}^+ \mid r^n = a$}
 \definition{The $n^{\text{th}}$ root of $a$ is $a^{1/n}$ or $\sqrt[n]{a}$}
 \powers{$\forall a, b \in \mathbb{R}^+ (ab)^{1/n} = a^{1/n}b^{1/n}$}
+\begin{corollary}
+Let $a$ be a positive number. To each rational number $x$ we can associate a positive number denoted by $a^x$, which is the $n^{\text{th}}$ power of $a$ when $x$ is a positive integer $n$, the $n^{\text{th}}$ root of $a$ when $x = 1/n$, and satisfying the following conditions:
+\powers{$\forall x, y \in \mathbb{Q} a^{x + y} = a^xa^y$}
+\powers{$\forall x, y \in \mathbb{Q} (a^x)^y = a^{xy}$}
+\powers{$\forall a, b \in \mathbb{R}^+ (ab)^x = a^xb^x$}
+\end{corollary}
+\corollary{$\forall a \in \mathbb{Q} a^0 = 1$}
+\corollary{$\forall a \in \mathbb{R} x \in \mathbb{R}^+ a^{-x} = \cfrac{1}{a^x}$}
+\corollary{$\forall a \in \mathbb{R} m, n \in \mathbb{Z}^+ a^{m/n} = (a^m)^{1/n} = (a^{1/n})^m$}
+\subsection{Inequalities}
+\theoremstyle{plain}
+\newtheorem{inequalities}{Inequalities}[section]
+\inequalities{$\forall a \in \mathbb{R}^+ \implies a > 0$}
+\inequalities{$\forall a, b \in \mathbb{R} a - b > 0 \implies a > b$}
+\inequalities{$\forall a \in \mathbb{R} -a > 0 \implies a < 0$}
+\inequalities{$\forall a, b \in \mathbb{R} a > b \implies b < a$}
+\inequalities{$\forall a, b \in \mathbb{R} a \geq b \implies a > b \lor a = b$}
+\inequalities{$\forall a, b, c \in \mathbb{R} a > b \land b > c \implies a > c$}
+\inequalities{$\forall a, b, c \in \mathbb{R} a > b \land c > 0 \implies ac > bc$}
+\inequalities{$\forall a, b, c \in \mathbb{R} a > b \land c < 0 \implies ac < bc$}
+\definition{open interval: $\forall x, a, b \in \mathbb{R} \mid a < x < b$}
+\definition{closed interval: $\forall x, a, b \in \mathbb{R} \mid a \leq x \leq b$}
+\definition{half open or half closed: $\forall x, a, b \in \mathbb{R} \mid a \leq x < b, a < x \leq b$}
+\definition{infinite interval: $\forall x, a \in \mathbb{R} \mid x < a \lor x > a \lor x \leq a \lor x \geq a$}
