@@ -1,4 +1,5 @@
 \usepackage{savetrees}
+\usepackage{graphicx}
 \usepackage{amsfonts, amsmath, amsthm}
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}[section]
@@ -7,5 +8,13 @@
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
 \newtheorem{example}{Example}[section]
+\newcommand{\quickfigure}[3]{
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=#3]{images/#1}
+\label{#1}
+\caption{#2}
+\end{figure}
+}
 \title{Notes on Basic Mathematics}
 \author{Brandon Koepke}

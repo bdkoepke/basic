@@ -1,0 +1,78 @@
+\section{Chapter 5: Distance and Angles}
+\subsection{Distance}
+\theoremstyle{plain}
+\newtheorem{distance}{Distance}[section]
+The distance between points $P, Q$ in the plane by $d(P, Q)$. It is a number which satisfies the following properties.
+\distance{$\forall P, Q : d(P, Q) \iff P = Q$}
+\distance{$\forall P, Q : d(P, Q) = d(Q, P)$}
+\distance{Triangle inequality: $\forall P, Q, M : d(P, M) \leq d(P, Q) + d(Q, M)$}
+\quickfigure{triangleInequality}{Triangle inequality}{1}
+\definition{We assume that two distinct points $P, Q$ lie on only one line denoted $L_{PQ}$}
+\quickfigure{segment}{Segment}{1}
+\quickfigure{line}{Line}{1}
+\definition{Segment: the portion of the line between two points $P, Q$, denoted by $\overline{PQ}$. If units of measure are selected then the length of the segment is equal to the distance $d(P, Q)$}
+\theoremstyle{plain}
+\newtheorem{segment}{Segment}[section]
+\segment{$\forall P, Q, M : d(P, M) = d(P, Q) + d(Q, M) \iff Q \in \overline{PQ}$}
+\quickfigure{PQMangle}{PQM Angle}{1}
+\segment{$\forall P, M \mid d = d(P, M) : 0 \leq c \leq d \implies \exists Q \in \overline{PM} \mid d(P, Q) = c$}
+\quickfigure{circle}{Circle}{1}
+\quickfigure{disc}{Disc}{1}
+\subsection{Angles}
+\corollary{$\forall (P, Q, P \neq Q) \exists! L_{PQ}$}
+\corollary{$\forall L_1, L_2, \neg{(L_1 \parallel L_2)} \exists! P \mid (P \in L_1) \land (P \in L_2)$}
+\corollary{$\forall L_1, P \exists! L_2 \mid (P \in L_2) \land (L_1 \parallel L_2)$}
+\corollary{$\forall L_1, L_2, L_3, (L_1 \parallel L_2) \land (L_2 \parallel L_3) \implies (L_1 \parallel L_3)$}
+\corollary{$\forall L_1, P \exists! L_2 \mid (P \in L_2) \land (L_1 \perp L_2)$}
+\corollary{$\forall L_1, L_2, L_3, (L_1 \perp L_2) \land (L_2 \parallel L_3) \implies (L_1 \perp L_3)$}
+\corollary{$\forall L_1, L_2, L_3, (L_1 \perp L_2) \land (L_2 \perp L_3) \implies (L_1 \parallel L_3)$}
+\definition{Ray: a ray is a line between two points $P, Q$ such that the ray is composed of all possible points extending past Q infinitely on one side. A ray is determined by it's starting point and direction.}
+\quickfigure{ray}{Ray}{1}
+\definition{Vertex: the starting point of the ray.}
+\definition{Angle: The portion enclosed by two rays $R_{PQ}$ and $R_{PM}$. The angle must be given additional information in order to determine which side of the resulting enclosure should be considered as the angle.}
+\quickfigure{angle}{Angle}{1}
+\definition{We shall determine the side of an angle by the portion enclosed by the clockwise enumeration of $\angle QPM$. In this case there are two rays $R_{QP}$ $R_{PM}$ and this angle would be the amount enclosed on the inside of $Q, P, M$ in that order. The opposite side would be $\angle MPQ$.}
+\definition{Zero Angle: the angle enclosed by the line $P, Q, M$. 0 degrees.}
+\definition{Full Angle: the angle enclosed by the line on the opposite side $P, Q, M$. 360 degrees.}
+\quickfigure{fullAngle}{Full Angle}{1}
+\quickfigure{90degrees}{Inside Angle}{1}
+\quickfigure{270degrees}{Outside Angle}{1}
+\definition{Straight Angle: the angle enclosed by the line $M, P, Q$. 180 degrees.}
+\quickfigure{halfAngle}{Straight Angle}{1}
+\definition{Sector: The area inside a circle captured by an angle with the vertex in the center of the circle. (A slice of a circle).}
+\quickfigure{quarterSegment}{Sector}{1}
+\corollary{Angle $x = 360 \left(\cfrac{\text{area of } S}{\text{area of } D}\right)$ where $S$ is the sector and $D$ is the disk.}
+\definition{Right angle: 90 degrees.}
+\quickfigure{90degrees}{Right angle 90 degrees}{1}
+\quickfigure{45degrees}{45 degree angle}{1}
+\quickfigure{30degrees}{3 degree angle}{1}
+\quickfigure{45degreeSlice}{Degree example}{1}
+\corollary{Area of $S = \cfrac{\angle S}{360} \pi r^2$ where $r$ is the radius.}
+\subsection{The Pythagoras Theorem}
+\definition{Triangle: $\forall P, Q, M, (\overline{PQ}, \overline{QM}, \overline{PM}) \implies \triangle PQM$}
+\quickfigure{triangle}{Triangle}{1}
+\definition{Right-angle triangle: When one of the three sides of a triangle is $90^{\circ}$}
+\definition{Legs of right triangle: The sides of the triangle that meet at the $90^{\circ}$ angle}
+\theoremstyle{plain}
+\newtheorem{righttriangle}{Right Triangle}[section]
+\begin{righttriangle}
+If two right-triangles $\triangle PQM$ and $\triangle P'Q'M'$ have legs $\overline{PQ}, \overline {PM}$ and $\overline{P'Q'}, \overline{P'M'}$ of equal lengths
+\[
+\text{length} \overline{PQ} = \text{length} \overline{P'Q'}
+\]
+\[
+\text{length} \overline{PM} = \text{length} \overline{P'M'}
+\]
+then the angles of the triangles have equal measure, their areas are equal and the length of $\overline{QM}$ is equal to $\overline{Q'M'}$.
+\end{righttriangle}
+\begin{righttriangle}
+$\forall L, L', (L \parallel L'), P, Q, (P \in L \land Q \in L)
+K_P, (K_P \perp L \land P \in K_P), P', (P' \in K_P \land P' \in L'),
+K_Q, (K_Q \perp L \land Q \in K_P), Q', (Q' \in K_Q \land Q' \in L')
+\implies \text{length}(\overline{PP'}) = \text{ length}(\overline{QQ'}) \implies d(P, P') = d(Q, Q')$
+\end{righttriangle}
+\begin{righttriangle}
+Rectangle:
+%$\forall P, Q, M, N \mid \overline{PQ}, \overline{QN}, \overline{NM}, \overline{MP} \text{ form a four-sided figure }, (\overline{PQ} \parallel \overline{NM} \land \overline{QN} \parallel \overline{MP}) \land (\overline{PQ} \perp \overline{QN} \land \overline{NM} \perp \overline{NP}) \implies \text{ four segments } \overline{PQ}, \overline{QN}, \overline{NM}, \overline{MP} \text{ form a rectangle determined by } P, Q, N, M.$
+\end{righttriangle}
+\quickfigure{rectangle}{Rectangle}{0.5}
