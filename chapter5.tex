@@ -72,7 +72,26 @@ K_Q, (K_Q \perp L \land Q \in K_P), Q', (Q' \in K_Q \land Q' \in L')
 \implies \text{length}(\overline{PP'}) = \text{ length}(\overline{QQ'}) \implies d(P, P') = d(Q, Q')$
 \end{righttriangle}
 \begin{righttriangle}
-Rectangle:
-%$\forall P, Q, M, N \mid \overline{PQ}, \overline{QN}, \overline{NM}, \overline{MP} \text{ form a four-sided figure }, (\overline{PQ} \parallel \overline{NM} \land \overline{QN} \parallel \overline{MP}) \land (\overline{PQ} \perp \overline{QN} \land \overline{NM} \perp \overline{NP}) \implies \text{ four segments } \overline{PQ}, \overline{QN}, \overline{NM}, \overline{MP} \text{ form a rectangle determined by } P, Q, N, M.$
+Rectangle: \newline
+$\forall P, Q, M, N \mid F\left(\overline{PQ}, \overline{QN}, \overline{NM}, \overline{MP}\right), (\overline{PQ} \parallel \overline{NM} \land \overline{QN} \parallel \overline{MP}) \land (\overline{PQ} \perp \overline{QN} \land \overline{NM} \perp \overline{NP}) \implies \overline{PQ}, \overline{QN}, \overline{NM}, \overline{MP} \land R\left(P, Q, N, M\right).$
+\newline
+where:
+\begin{itemize}
+\item $F$ is the predicate such that it's arguments all form sides
+\item $R$ is the predicate such that all of it's arguments form a rectangle.
+\end{itemize}
 \end{righttriangle}
 \quickfigure{rectangle}{Rectangle}{0.5}
+\quickfigure{rectangleTriangle}{Triangle Rectangle}{0.5}
+\begin{theorem}
+$\forall A, B \in \angle \text{Right Triangle, other than right angle then } \implies m(A) + m(B) = 90^{\circ}$
+\end{theorem}
+\begin{theorem}
+$\text{Area of right triangle } \mid \text{ legs } a, b \implies \cfrac{ab}{2}$
+\end{theorem}
+\definition{Hypotenuse: the third side of a right-angle triangle which is not one of the legs}
+\begin{theorem}
+Let $a, b$ be lengths of two legs of a right triangle and let $c$ be the length of the hypotenuse then:
+$a^2 + b^2 = c^2$
+\end{theorem}
+\corollary{Let $P, Q$ be distinct points in the plane, Let $M$ be a point in the plane, then $d(P, M) = d(Q, M) \iff M \in \perp \text{ bisec } \overline{PQ}$}
